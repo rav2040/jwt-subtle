@@ -1,0 +1,41 @@
+{
+  "name": "jwt-subtle",
+  "version": "1.0.0",
+  "description": "JWT authentication using the WebCrpyto API.",
+  "author": "Stuart Kennedy",
+  "license": "MIT",
+  "homepage": "https://github.com/rav2040/jwt-subtle#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rav2040/jwt-subtle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rav2040/jwt-subtle/issues"
+  },
+  "keywords": [
+    "jwt",
+    "authentication",
+    "crypto",
+    "web crpyto",
+    "subtle crypto",
+    "cloudflare workers"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "ts-node ./tests/base64.test.ts && ts-node ./tests/index.test.ts",
+    "test:ci": "c8 --all npm run test",
+    "build": "rm -rf ./lib && tsc -b",
+    "prepublishOnly": "npm run test:ci && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "c8": "^7.11.3",
+    "eslint": "^8.16.0",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
