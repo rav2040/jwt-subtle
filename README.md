@@ -1,10 +1,11 @@
 # jwt-subtle
 
-JWT authentication using the WebCrypto API for Cloudflare Workers and Node.js. Zero dependencies.
+JWT encoding/decoding using the WebCrypto API for [Cloudflare Workers](https://workers.cloudflare.com/) and Node.js.
 
-![unit tests](https://github.com/rav2040/jwt-subtle/actions/workflows/unit-tests.yml/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/rav2040/jwt-subtle/badge.svg)](https://coveralls.io/github/rav2040/jwt-subtle)
-[![Known Vulnerabilities](https://snyk.io/test/github/rav2040/jwt-subtle/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rav2040/jwt-subtle?targetFile=package.json)
+![tests](https://img.shields.io/github/workflow/status/rav2040/jwt-subtle/unit-tests?label=tests&style=for-the-badge)
+![coverage](https://img.shields.io/coveralls/github/rav2040/jwt-subtle?style=for-the-badge)
+![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/rav2040/jwt-subtle?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/jwt-subtle?style=for-the-badge)
 
 ### ⚠️ Note
 
@@ -116,10 +117,10 @@ try {
 ### Decoding with a different algorithm
 
 ```js
-const token = encode(payload, "secret", "HS256")
+const token = encode(payload, "secret", "HS256");
 
 try {
-  await decode(token, "secret", "HS512")
+  await decode(token, "secret", "HS512");
 } catch {
   // Error: Token header "alg" value [HS256] does not match
   // the expected algorithm [HS512].
@@ -127,4 +128,5 @@ try {
 ```
 
 ## License
+
 [MIT](https://github.com/rav2040/jwt-simple/blob/master/LICENSE)
