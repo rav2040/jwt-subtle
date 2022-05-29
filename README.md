@@ -94,7 +94,7 @@ const token = encode(payload, "secret")
 
 // Attempting to decode the token before it becomes valid
 try {
-  await decode(payload, "secret")
+  await decode(token, "secret")
 } catch {
   // Error: Token is not yet active.
 }
@@ -103,7 +103,7 @@ try {
 
 // Attempting to decode the token after it expires
 try {
-  await decode(payload, "secret")
+  await decode(token, "secret")
 } catch {
   // Error: Token has expired.
 }
