@@ -121,3 +121,6 @@ try {
   // the expected algorithm [HS512].
 }
 ```
+
+## License
+[MIT](https://github.com/rav2040/jwt-simple/blob/master/LICENSE)
