@@ -2,7 +2,7 @@
 
 JWT encoding/decoding using the WebCrypto API for [Cloudflare Workers](https://workers.cloudflare.com/) and Node.js.
 
-![tests](https://img.shields.io/github/workflow/status/rav2040/jwt-subtle/unit-tests?label=tests&style=for-the-badge)
+![build](https://img.shields.io/github/workflow/status/rav2040/jwt-subtle/unit-tests?style=for-the-badge)
 ![coverage](https://img.shields.io/coveralls/github/rav2040/jwt-subtle?style=for-the-badge)
 ![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/rav2040/jwt-subtle?style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/jwt-subtle?style=for-the-badge)
