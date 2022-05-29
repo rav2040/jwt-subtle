@@ -76,7 +76,7 @@ const token = await encode(payload, privateKey, "RS256")
 
 ```js
 const publicKey = ... // Get public key
-const token = await decode(payload, publicKey, "RS256")
+const payload = await decode(token, publicKey, "RS256")
 ```
 
 ### Using `nbf` and/or `exp` claims
@@ -94,7 +94,7 @@ const token = encode(payload, "secret")
 
 // Attempting to decode the token before it becomes valid
 try {
-  await decode(token, "secret")
+  await decode(payload, "secret")
 } catch {
   // Error: Token is not yet active.
 }
@@ -103,7 +103,7 @@ try {
 
 // Attempting to decode the token after it expires
 try {
-  await decode(token, "secret")
+  await decode(payload, "secret")
 } catch {
   // Error: Token has expired.
 }
