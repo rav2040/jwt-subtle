@@ -2,8 +2,11 @@
 
 JWT authentication using the WebCrpyto API for Cloudflare Workers and Node.js.
 
-![unit tests](https://github.com/rav2040/jwt-subtle/workflows/CI/badge.svg)
+Zero dependencies.
+
+![unit tests](https://github.com/rav2040/jwt-subtle/actions/workflows/unit-tests.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/rav2040/jwt-subtle/badge.svg)](https://coveralls.io/github/rav2040/jwt-subtle)
+[![Known Vulnerabilities](https://snyk.io/test/github/rav2040/jwt-subtle/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rav2040/jwt-subtle?targetFile=package.json)
 
 ### ⚠️ Note
 
