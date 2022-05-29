@@ -16,9 +16,10 @@
     "jwt",
     "authentication",
     "crypto",
-    "web crpyto",
+    "web crypto",
     "subtle crypto",
-    "cloudflare workers"
+    "cloudflare workers",
+    "next middleware"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
