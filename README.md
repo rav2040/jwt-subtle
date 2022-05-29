@@ -1,8 +1,6 @@
 # jwt-subtle
 
-JWT authentication using the WebCrpyto API for Cloudflare Workers and Node.js.
-
-Zero dependencies.
+JWT authentication using the WebCrypto API for Cloudflare Workers and Node.js. Zero dependencies.
 
 ![unit tests](https://github.com/rav2040/jwt-subtle/actions/workflows/unit-tests.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/rav2040/jwt-subtle/badge.svg)](https://coveralls.io/github/rav2040/jwt-subtle)
