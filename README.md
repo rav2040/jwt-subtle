@@ -2,6 +2,9 @@
 
 JWT authentication using the WebCrpyto API for Cloudflare Workers and Node.js.
 
+![unit tests](https://github.com/rav2040/jwt-simple/workflows/CI/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/rav2040/jwt-simple/badge.svg)](https://coveralls.io/github/rav2040/jwt-simple)
+
 ### ⚠️ Note
 
 > The WebCrypto API is currently supported in experimental form in Node v15 and greater.
