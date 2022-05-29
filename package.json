@@ -24,7 +24,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "ts-node ./tests/base64.test.ts && ts-node ./tests/index.test.ts",
-    "test:ci": "c8 --all npm run test",
+    "test:unit": "c8 --all npm run test",
+    "test:ci": "c8 --all --reporter=lcov npm run test",
     "build": "rm -rf ./lib && tsc -b",
     "prepublishOnly": "npm run test:ci && npm run build"
   },
